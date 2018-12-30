@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.shano.unify.ImageFragment">
+
+    <ImageView
+        android:id="@+id/enlargeImage"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        app:srcCompat="@drawable/no_image"
+        android:scaleType="fitXY"
+        />
+
+    <Button
+        android:id="@+id/closeImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:text="Close"
+        android:textColor="#ffffff"
+        android:background="#1a75ff"
+        android:textSize="12sp"/>
+
+</LinearLayout>

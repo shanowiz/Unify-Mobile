@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.shano.unify.SetPreferenceActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/preferenceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/subscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="65dp"
+            android:layout_toEndOf="@+id/students_union_switch"
+            android:padding="3dp"
+            android:text="Subscriptions"
+            android:textSize="25dp" />
+
+        <Switch
+            android:id="@+id/students_union_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/subscription"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="37dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/students_union_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Students Union"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:layout_marginStart="31dp"
+            android:layout_alignBottom="@+id/students_union_switch"
+            android:layout_toEndOf="@+id/students_union_switch" />
+
+        <Switch
+            android:id="@+id/faculty_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/students_union_switch"
+            android:layout_below="@+id/students_union_switch"
+            android:layout_marginTop="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/faculty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculty"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/faculty_switch"
+            android:layout_alignStart="@+id/students_union_view" />
+
+        <Switch
+            android:id="@+id/club_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text=""
+            android:layout_below="@+id/faculty_view"
+            android:layout_alignStart="@+id/faculty_switch" />
+
+        <TextView
+            android:id="@+id/club_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/club_switch"
+            android:layout_alignStart="@+id/faculty_view"
+            android:text="Clubs"
+            android:padding="3dp"
+            android:textSize="20dp"/>
+
+        <Switch
+            android:id="@+id/discount_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/club_switch"
+            android:layout_below="@+id/club_switch"
+            android:layout_marginTop="35dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/discount_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Discounts"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/discount_switch"
+            android:layout_alignStart="@+id/club_view" />
+
+        <Button
+            android:id="@+id/preferenceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_radius"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

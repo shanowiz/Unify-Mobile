@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Events">
+        <menu>
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_discounts_layout"
+            android:icon="@drawable/details"
+            android:title="Store Discounts" />
+        <item
+            android:id="@+id/nav_all_events_layout"
+            android:icon="@drawable/details"
+            android:title="All Events" />
+        <item
+            android:id="@+id/nav_happening_today_layout"
+            android:icon="@drawable/details"
+            android:title="Today's Events" />
+        <item
+            android:id="@+id/nav_students_union_layout"
+            android:icon="@drawable/details"
+            android:title="Students Union Events" />
+        <item
+            android:id="@+id/nav_faculty_layout"
+            android:icon="@drawable/details"
+            android:title="Faculty Events" />
+        <item
+            android:id="@+id/nav_university_layout"
+            android:icon="@drawable/details"
+            android:title="University Events" />
+        <item
+            android:id="@+id/nav_clubs_layout"
+            android:icon="@drawable/details"
+            android:title="Club Events" />
+
+
+    </group>
+            </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

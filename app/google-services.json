@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "264883030029",
+    "firebase_url": "https://unify-e45ae.firebaseio.com",
+    "project_id": "unify-e45ae",
+    "storage_bucket": "unify-e45ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264883030029:android:a789a6b4ae21621c",
+        "android_client_info": {
+          "package_name": "com.example.shano.unify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264883030029-i8ng4nr0flma6moo43ldqt4bql3dhk39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shano.unify",
+            "certificate_hash": "fb7a9d78b66e86a807953542ff17e395c264fbf1"
+          }
+        },
+        {
+          "client_id": "264883030029-qsnrv7kvrudb5fjn2lj9dc6r5p8oof8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALtOfXOlOHFlJvwrh93ybDWJoqG9naOr0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264883030029-qsnrv7kvrudb5fjn2lj9dc6r5p8oof8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

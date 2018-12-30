@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eachEventLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.shano.unify.SetPreferenceActivity"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="#ffd11a">
+
+
+    <RelativeLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/each_event_radius"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+        <Button
+            android:id="@+id/eachEventBackButton"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_above="@+id/eachEventImage"
+            android:layout_alignStart="@+id/eachEventScrollview"
+            android:background="@null"
+            android:drawableTop="@drawable/left_arrow"
+            android:layout_marginBottom="3sp"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/eachEventImage"
+            android:layout_marginStart="15sp"
+            android:layout_toEndOf="@+id/eachEventBackButton"
+            android:ellipsize="end"
+            android:layout_marginBottom="10sp"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/eachEventImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:srcCompat="@drawable/no_image"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_below="@+id/eachEventImage"
+            android:fillViewport="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/eachEventScrollview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/eachEventName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Event"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                           />
+
+                            <Switch
+                                android:id="@+id/reminderSwitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="11dp"
+                                android:text="Reminder"
+                                />
+
+                    </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/eachEventDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Details"
+                            android:textSize="16sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+                <TableRow>
+                        <TextView
+                            android:id="@+id/eachEventVenueLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Venue: "
+                            android:layout_marginTop="11dp"
+                            android:layout_weight="1"
+                            />
+
+                        <TextView
+                            android:id="@+id/eachEventVenue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Data"
+                            android:layout_marginTop="11dp"
+                            android:layout_weight="30"/>
+
+                        </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/eachEventDateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Date: "
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/eachEventDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Data "
+                            android:layout_weight="30"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/eachEventTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Time: "
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/eachEventTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Data "
+                            android:layout_weight="30"/>
+                        </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/eachEventCostLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Cost: "
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/eachEventCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="$ "
+                            android:layout_weight="30"/>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:id="@+id/map"
+                tools:context=".EachEventActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/satelliteRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Satellite" />
+
+                    <RadioButton
+                        android:id="@+id/normalRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Normal" />
+               </RadioGroup>
+
+            </fragment>
+
+            <Button
+                android:id="@+id/enlargeMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:text="Enlarge Map"
+                android:textColor="#ffffff"
+                android:background="#1a75ff"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
